@@ -1,0 +1,25 @@
+import { Meta, Title, Subtitle } from '@storybook/addon-docs/blocks';
+import { Tag, Table, sections } from './SemanticaHelpers.tsx';
+import { palettes } from '../../tokens/colors';
+
+<Meta title="Cores/Cores semanticas" />
+
+<Tag>Tokens</Tag>
+
+<Title>Cores semânticas</Title>
+<Subtitle>
+  Os tokens semânticos comunicam a função de uma cor em um nível genérico (feedback, status, alerta). Eles se adaptam ao modo claro/escuro, diferente de tokens contextuais fixos.
+</Subtitle>
+
+{sections.map((section) => (
+  <Table key={section.title} title={section.title} rows={section.rows} />
+))}
+
+<div
+  style={{
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+    gap: '12px'
+  }}
+>
+</div>

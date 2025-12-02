@@ -1,0 +1,85 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+export const Tag = ({ children }) => (
+  <span
+    style={{
+      display: "inline-flex",
+      alignItems: "center",
+      justifyContent: "center",
+      padding: "4px 10px",
+      borderRadius: "12px",
+      background: "#2b7aff",
+      color: "#ffffff",
+      fontWeight: 700,
+      fontSize: "11px",
+      lineHeight: "14px",
+      letterSpacing: "0.25px",
+      marginBottom: "12px",
+      width: "fit-content",
+      boxShadow: "none",
+    }}
+  >
+    {children}
+  </span>
+);
+
+<Meta title="Cores/Novidades" />
+
+<Tag>Novidade</Tag>
+
+<Title>O que há de novo</Title>
+
+<div style={{ display: 'grid', gap: '18px', marginTop: '8px', color: '#3a3a3a', lineHeight: 1.65 }}>
+  <section>
+    <div style={{ fontWeight: 700, fontSize: '16px', color: '#101010', marginBottom: '6px' }}>Otimização dos tokens</div>
+    <p style={{ margin: 0 }}>
+      Simplificamos a nomenclatura e reduzimos tokens redundantes, deixando a escolha de cores mais direta e fácil para todos os times.
+    </p>
+   
+  </section>
+
+{" "}
+
+<section>
+  <div
+    style={{
+      fontWeight: 700,
+      fontSize: "16px",
+      color: "#101010",
+      marginBottom: "6px",
+    }}
+  >
+    Adaptação para modo escuro
+  </div>
+  <p style={{ margin: 0 }}>
+    Ajustamos a paleta para facilitar o modo escuro usando cinzas profundos e
+    opacidade, evitando preto absoluto e fadiga visual.
+  </p>
+</section>
+
+{" "}
+
+<section>
+  <div
+    style={{
+      fontWeight: 700,
+      fontSize: "16px",
+      color: "#101010",
+      marginBottom: "6px",
+    }}
+  >
+    Nova cor de marca
+  </div>
+  <p style={{ margin: 0 }}>
+    Incluímos uma cor de marca personalizável (accent color) para dar
+    flexibilidade a produtos e campanhas.
+  </p>
+</section>
+
+  <section>
+    <div style={{ fontWeight: 700, fontSize: '16px', color: '#101010', marginBottom: '6px' }}>Alteração da cor neutra</div>
+    <p style={{ margin: 0 }}>
+      Substituímos o cinza de subtom frio por um neutro equilibrado, adequado para contextos quentes e frios, mantendo legibilidade e conforto visual.
+    </p>
+  </section>
+</div>

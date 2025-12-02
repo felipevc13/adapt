@@ -1,0 +1,33 @@
+import { Meta, Title, Subtitle } from '@storybook/addon-docs/blocks';
+import { palettes } from '../../tokens/colors';
+
+<Meta title="Cores/Proporcao" />
+
+<Title>Proporção de uso</Title>
+<Subtitle>Distribua cores pensando em hierarquia: plano neutro, destaque e ação.</Subtitle>
+
+<div style={{ display: 'grid', gap: '8px', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))' }}>
+  {[
+    { label: 'Plano', percent: '70%', color: '#f3f3f3', text: '#101010' },
+    { label: 'Conteúdo', percent: '20%', color: '#ffffff', text: '#101010' },
+    { label: 'Ação', percent: '10%', color: palettes.cobalto[500], text: '#ffffff' }
+  ].map((b) => (
+    <div
+      key={b.label}
+      style={{
+        padding: '12px',
+        borderRadius: '12px',
+        background: b.color,
+        color: b.text,
+        border: '1px solid rgba(0,0,0,0.06)',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        fontWeight: 600
+      }}
+    >
+      <span>{b.label}</span>
+      <span style={{ fontFamily: 'monospace' }}>{b.percent}</span>
+    </div>
+  ))}
+</div>
