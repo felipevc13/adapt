@@ -1,0 +1,4 @@
+import{j as e,M as r,T as o,S as i}from"./blocks-BnuSyAcz.js";import{useMDXComponents as a}from"./index-BiTPaKfG.js";import"./preload-helper-PPVm8Dsz.js";import"./iframe-Cttmqma9.js";function t(s){return e.jsxs(e.Fragment,{children:[e.jsx(r,{title:"Cores/Acessibilidade"}),`
+`,e.jsx(o,{children:"Acessibilidade"}),`
+`,e.jsx(i,{children:"Contraste mínimo 4.5:1 para texto normal e 3:1 para componentes."}),`
+`,e.jsxs("ul",{style:{paddingLeft:"18px",margin:0,color:"#444",lineHeight:1.6},children:[e.jsx("li",{children:"Use grey-800 em fundos claros; grey-50 em fundos escuros."}),e.jsx("li",{children:"Evite tons 50-200 para texto principal; reserve-os para fundos."}),e.jsx("li",{children:"Links e CTAs devem manter contraste com hover/focus visível."})]})]})}function p(s={}){const{wrapper:n}={...a(),...s.components};return n?e.jsx(n,{...s,children:e.jsx(t,{...s})}):t()}export{p as default};
